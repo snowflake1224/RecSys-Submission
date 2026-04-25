@@ -6,6 +6,7 @@ Note: All listed files are required for the pipeline to run successfully.
 
 Download from:
 cseweb.ucsd.edu/~jmcauley/datasets/goodreads.html
+
 https://cseweb[dot]ucsd[dot]edu/~jmcauley/datasets/goodreads[dot]html
 
 Required files:
@@ -19,6 +20,7 @@ Required files:
 
 An alternative automated download method is available at:
 github.com/MengtingWan/goodreads (see `download.ipynb`)
+
 https://github[dot]com/MengtingWan/goodreads (see `download.ipynb`)
 
 After downloading, place all files inside:
