@@ -5,9 +5,9 @@ This project uses the publicly available Goodreads dataset.
 Note: All listed files are required for the pipeline to run successfully.
 
 Download from:
-cseweb.ucsd.edu/~jmcauley/datasets/goodreads.html
+https://cseweb.ucsd.edu/~jmcauley/datasets/goodreads.html
 
-https://cseweb[dot]ucsd[dot]edu/~jmcauley/datasets/goodreads[dot]html
+(If the link is hidden, use: cseweb[dot]ucsd[dot]edu/~jmcauley/datasets/goodreads[dot]html)
 
 Required files:
 
@@ -18,10 +18,10 @@ Required files:
 * `goodreads_book_series.json`
 * `goodreads_book_works.json`
 
-An alternative automated download method is available at:
-github.com/MengtingWan/goodreads (see `download.ipynb`)
+Alternative download method:
+https://github.com/MengtingWan/goodreads (see `download.ipynb`)
 
-https://github[dot]com/MengtingWan/goodreads (see `download.ipynb`)
+(If hidden: github[dot]com/MengtingWan/goodreads)
 
 After downloading, place all files inside:
 
