@@ -23,17 +23,17 @@
   </defs>
 
   <rect width="1120" height="600" fill="url(#bg)"/>
-  <text x="34" y="40" class="t">CADM  Contradiction-Aware Dual-Memory Conversational Recommender</text>
-  <text x="34" y="60" class="s">RecSys 2026 Co-Authored Manuscript · Goodreads Book Graph · +16.2% NDCG@10 (0.365 vs 0.314) &amp; 33% Fewer Turns</text>
+  <text x="34" y="40" class="t">CADM &#8212; Contradiction-Aware Dual-Memory Conversational Recommender</text>
+  <text x="34" y="60" class="s">RecSys 2026 Co-Authored Manuscript &#183; Goodreads Book Graph &#183; +16.2% NDCG@10 (0.365 vs 0.314) &amp; 33% Fewer Turns</text>
 
-  <!-- Row 1: Dialogue & Dual Memory -->
+  <!-- Row 1: Dialogue &amp; Dual Memory -->
   <rect x="34" y="84" width="1052" height="162" class="zone"/>
   <text x="50" y="106" class="zl">1. Dialogue Preference Extraction &amp; Contradiction Routing</text>
   <rect x="52" y="122" width="240" height="106" class="box"/>
   <text x="68" y="144" class="bt">Turn Query &amp; Extractor</text>
   <text x="68" y="164" class="bs">User turn q_t -&gt;</text>
   <text x="68" y="181" class="bs">pi_t = (attr, val, conf)</text>
-  <text x="68" y="198" class="bs">Genre · tone · author · pace</text>
+  <text x="68" y="198" class="bs">Genre &#183; tone &#183; author &#183; pace</text>
 
   <rect x="320" y="122" width="230" height="106" class="box-mem"/>
   <text x="336" y="144" class="bt">Long-Term Memory (M^L)</text>
@@ -53,7 +53,7 @@
   <text x="852" y="181" class="bs">Adaptive EIG &gt; 0.70 -&gt;</text>
   <text x="852" y="198" class="bs">ask clarifying question c_t</text>
 
-  <!-- Row 2: Hybrid Retrieval & LambdaRank -->
+  <!-- Row 2: Hybrid Retrieval &amp; LambdaRank -->
   <rect x="34" y="272" width="1052" height="156" class="zone"/>
   <text x="50" y="294" class="zl">2. Hybrid Retrieval &amp; 16-Feature LightGBM LambdaRank</text>
   <rect x="52" y="310" width="320" height="98" class="box"/>
@@ -70,7 +70,7 @@
 
   <rect x="764" y="310" width="304" height="98" class="box-mem"/>
   <text x="780" y="332" class="bt">LightGBM LambdaRank</text>
-  <text x="780" y="352" class="bs">700 rounds · early stopping (80)</text>
+  <text x="780" y="352" class="bs">700 rounds &#183; early stopping (80)</text>
   <text x="780" y="369" class="bs">Graded relevance label_gain [0, 1, 3]</text>
   <text x="780" y="386" class="bs">Reranks top-250 -&gt; Top-K items</text>
 
@@ -79,7 +79,7 @@
   <text x="50" y="476" class="zl">3. Manuscript Results Ladder (Goodreads Book Graph)</text>
   <rect x="52" y="492" width="1016" height="62" class="box"/>
   <text x="72" y="516" class="bs">Random (0.018) -&gt; CF-only (0.178) -&gt; Sem-only (0.224) -&gt; Hybrid (0.271) -&gt; Hybrid+LTR (0.314) -&gt; CADM Full (0.365 NDCG@10)</text>
-  <text x="72" y="538" class="bs" fill="#34d399">Notebook retrieval eval (28,886 Goodreads queries): Hybrid+LTR raises NDCG@10 from 0.4366 to 0.6618 · Adaptive EIG cuts avg turns 4.9 -&gt; 3.2</text>
+  <text x="72" y="538" class="bs" fill="#34d399">Notebook retrieval eval (28,886 Goodreads queries): Hybrid+LTR raises NDCG@10 from 0.4366 to 0.6618 &#183; Adaptive EIG cuts avg turns 4.9 -&gt; 3.2</text>
 
   <path d="M 292 175 L 320 175" class="e"/>
   <path d="M 550 175 L 578 175" class="e"/>
