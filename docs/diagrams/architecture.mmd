@@ -1,0 +1,14 @@
+flowchart TD
+    Q["User Query q_t"] --> EXT["Preference Extractor: pi_t = (attr, val, conf)"]
+    EXT --> LTM["Long-Term Memory M^L (decay gamma = 0.95)"]
+    EXT --> STM["Short-Term Session Buffer M^S (window W = 12)"]
+    LTM --> CON{"Contradiction Detector cos(e_vi, e_v) < 0.35"}
+    STM --> CON
+    CON -- conflict --> STM
+    CON -- consistent --> FUSE["Hybrid Retrieval: 0.6 HNSW (BGE-small 384d) + 0.4 TF-IDF (100K)"]
+    EXT --> FUSE
+    FUSE --> EIG{"Adaptive EIG Elicitation: EIG(t) > 0.70?"}
+    EIG -- yes --> ASK["Clarifying Question c_t"]
+    EIG -- no --> FEAT["16-Feature Extractor (semantic · CF · structural · memory)"]
+    FEAT --> LTR["LightGBM LambdaRank (700 rounds, top-250 candidates)"]
+    LTR --> TOPK["Top-K Book Recommendations"]
